@@ -33,6 +33,11 @@ package org.firstinspires.ftc.robotcontroller.internal;
 
 import org.firstinspires.ftc.robotcontroller.internal.FirstResq.CompetitionTeleOp7261;
 import org.firstinspires.ftc.robotcontroller.internal.OffSeason.DemoBot;
+import org.firstinspires.ftc.robotcontroller.internal.VelocityVortex.BallLauncherTest;
+import org.firstinspires.ftc.robotcontroller.internal.VelocityVortex.BasicTestMovementTwoMotor;
+import org.firstinspires.ftc.robotcontroller.internal.VelocityVortex.CompetitionAuto;
+import org.firstinspires.ftc.robotcontroller.internal.VelocityVortex.CompetitionTeleOp;
+
 import com.qualcomm.robotcore.eventloop.opmode.OpModeManager;
 import com.qualcomm.robotcore.eventloop.opmode.OpModeRegister;
 
@@ -58,6 +63,9 @@ public class FtcOpModeRegister implements OpModeRegister {
      */
 
     manager.register("demo", DemoBot.class);
-    manager.register("Competition TeleOp", CompetitionTeleOp7261.class);
+    manager.register("4motor Test", BasicTestMovementTwoMotor.class);
+    manager.register("Ball Launcher Test", BallLauncherTest.class);
+    manager.register("Competition Teleop", CompetitionTeleOp.class);
+    manager.register("Competition Auto", CompetitionAuto.class);
   }
 }
